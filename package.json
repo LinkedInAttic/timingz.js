@@ -1,0 +1,39 @@
+{
+  "name": "timingz.js",
+  "version": "0.1.0",
+  "description": "Measure code execution in the browser and derive statistical data.",
+  "main": "dist/index.js",
+  "bin": {
+    "timingz": "./bin/timingz.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && broccoli build dist",
+    "prepublish": "npm run build",
+    "test": "echo \"No tests yet...\""
+  },
+  "keywords": [
+    "performance",
+    "stats",
+    "measure",
+    "mark"
+  ],
+  "author": "Will Hastings",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "corser": "^2.0.1",
+    "express": "^4.14.0",
+    "fast-stats": "0.0.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "broccoli": "^1.1.0",
+    "broccoli-cli": "^1.0.0",
+    "broccoli-merge-trees": "^1.2.1",
+    "broccoli-rollup": "^1.0.3",
+    "rollup-plugin-babel": "^2.7.1"
+  }
+}
