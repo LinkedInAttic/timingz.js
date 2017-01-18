@@ -138,6 +138,15 @@ To see more options available for each command, run:
 timingz <command> --help
 ```
 
+## Alternatives
+
+Timingz.js focuses on helping you determine the performance of code through
+statistical measurements. If you're looking for a more general library for
+measuring code execution times in the browser, check out these alternatives:
+
+* [marky](https://github.com/nolanlawson/marky)
+* [Surf-N-Perf](https://github.com/Comcast/Surf-N-Perf)
+
 ## License
 
 Copyright 2017 LinkedIn Corp. Licensed under the BSD 2-Clause License (the
