@@ -1,5 +1,7 @@
 # Timingz.js
 
+![Screen shot of Timingz.js on the command line](screenshot.png)
+
 Timingz.js is a tool for collecting measurements of code execution times in the
 browser and deriving statistical data from those measurements. It makes it easy
 to run your code under test many times and collect data to produce meaningful
