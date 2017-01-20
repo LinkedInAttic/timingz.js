@@ -16,7 +16,13 @@ function getScriptTree(inputTree, entry, dest) {
       format: 'cjs',
       sourceMap: true,
       plugins: [
-        babel({presets: ['es2015-rollup']})
+        babel({
+          presets: ['es2015-rollup'],
+          exclude: 'node_modules/**',
+          // TODO: Have to do this to exclude the unneeded asyncGenerator helper,
+          // but I should figure out why it was being included.
+          externalHelpersWhitelist: ['classCallCheck', 'createClass', 'inherits', 'possibleConstructorReturn']
+        })
       ]
     }
   });
